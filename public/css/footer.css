@@ -1,5 +1,7 @@
 footer{
     background-color: #fff;
+    display: flex;
+    flex-flow: column wrap;
 }
 footer section article{
     text-align: center;
@@ -15,7 +17,7 @@ footer section article .description{
 }
 footer .copyright{
     font-size: 12px;
-    margin: 40px 10px;
+    margin: 40px 10px 20px;
 }
 
 @media (min-width: 361px) {
