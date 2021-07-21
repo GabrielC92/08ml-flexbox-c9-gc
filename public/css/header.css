@@ -2,38 +2,45 @@ header{
     background-color: var(--amarillo);
     width: 100%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
 }
 header img{
-    width: 39%;
-    margin-top: 30px;
-    margin-left: 30px;
+    width: 50%;
 }
 header .search-bar{
-    padding: 2px;
-    margin-left: 20px;
+    width: 46%;
+    display: flex;
+    position: relative;
+    border-radius: 3px;
 }
 header .search-bar input{
-    width: 60%;
-    margin: 10px auto 2px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    font-size: 12px;
+    color: var(--grisOscuro);
 }
 header .search-bar div{
-    display: inline;
+    position: relative;
+    right: 17px;
 }
 header .search-bar div a{
-    background-color: var(--grisClaro);
+    background-color: #fff;
     color: var(--azul);
-    border: solid 1px var(--grisOscuro);
     border-radius: 3px;
 }
 header .search-bar div a i{
     padding: 1px;
     font-size: 13px;
+    color: var(--grisOscuro);
 }
 header p{
     font-size: 12px;
     text-align: center;
     margin: 15px auto;
+    width: 100%;
 }
 header .navbar{
     display: none;
@@ -57,22 +64,53 @@ header .burger-menu i {
     padding: 10px;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 768px) {
+    header{
+        padding: 25px;
+    }
+    header img{
+        width: 33%;
+    }
+    header .search-bar{
+        width: 30%;
+    }
+    header .search-bar input{
+        border: 1px solid var(--grisOscuro);
+        margin-left: 20px;
+        width: 74%;
+    }
+    header .search-bar div{
+        right: 0;
+        margin-left: 3px;
+    }
+    header .search-bar div a{
+        background-color: var(--grisClaro);
+        border: 1px solid var(--grisOscuro);
+    }
+    header .search-bar div a i{
+        color: rgb(0, 0, 0);
+    }
+    header p{
+        width: 33%;
+    }
     header .navbar{
         display: block;
-        margin: 20px 10px;
-        font-size: 12px;
+    }
+    header .navbar ul, header .login-bar ul{
+        display: flex;
+    }
+    header .navbar ul li, header .login-bar ul li{
+        margin: 0 9px;
     }
     header .login-bar{
         display: block;
-        margin: 0 10px 30px;
-        font-size: 12px;
+        margin-bottom: 0px;
     }
     header .burger-menu{
         display: none;
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
     
 }

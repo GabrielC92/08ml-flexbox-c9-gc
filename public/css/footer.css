@@ -20,10 +20,12 @@ footer .copyright{
     margin: 40px 10px 20px;
 }
 
-@media (min-width: 361px) {
-    
+@media (min-width: 768px) {
+    footer section{
+        display: flex;
+    }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
     
 }
